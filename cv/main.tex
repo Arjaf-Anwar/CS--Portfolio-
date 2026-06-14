@@ -1,0 +1,94 @@
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     
+\usepackage{graphicx}                     
+\usepackage[svgnames]{xcolor}             
+\usepackage[margin=0.75in]{geometry}
+\usepackage{url}
+\usepackage[colorlinks=true,urlcolor=purple]{hyperref}
+
+\frenchspacing              
+\pagestyle{empty}           
+
+\usepackage{sectsty}
+\sectionfont{
+	\usefont{OT1}{phv}{b}{n}
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+% Macros for Skills structure
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			
+\newcommand{\sepspace}{\vspace*{0.5em}}		
+\newcommand{\SkillsEntry}[2]{      
+		\noindent\hangindent=2em\hangafter=0 
+		\parbox{\spacebox}{        
+		\textit{#1}}			   
+		\hspace{1.5em} #2 \par}    
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+% ==========================================
+% B201 Computer Science Lab - CV Assignment
+% Student Name: Arjaf Anwar
+% Date: April 2026
+% ==========================================
+
+\begin{document}
+
+% Header Layout with your exact student details and photo
+\begin{minipage}[t]{0.7\textwidth}
+    \Huge \usefont{OT1}{phv}{b}{n} \textbf{Arjaf Anwar} \\
+    \large \usefont{OT1}{phv}{m}{n} \vspace{2mm}
+    \\ Berlin, Germany 
+    \\ Email: Arjaf.anwar@gisma-student.com 
+    \\ GitHub: \href{https://arjaf-anwar.github.io/CS--Portfolio-/}{arjaf-anwar.github.io/CS--Portfolio-}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+    \raggedleft
+    % Including your uploaded image file
+    \includegraphics[width=2.8cm]{Arjaf anwar passport size pic.jpg} 
+\end{minipage}
+
+\sepspace
+\vspace{5mm}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}
+
+\textbf{Gisma University of Applied Sciences} \hfill Berlin, Germany \\
+BSc in Computer Science \hfill June 2026
+\begin{itemize}
+    \item Core Laboratory Modules: B201 Computer Science Lab.
+    \item Practiced elementary data handling, text manipulation, and calculation logic.
+    \item Studied document production systems and code layout control.
+\end{itemize}
+
+\sepspace
+
+%%% Technical Skills
+%%% ------------------------------------------------------------
+\NewPart{Technical Skills}
+
+\SkillsEntry{Languages}{Python, HTML5, CSS3 markup systems.}
+\SkillsEntry{Applications}{Git terminal command lines, GitHub online hosting setups.}
+\SkillsEntry{Environments}{Jupyter Notebook documents, IDLE script execution paths.}
+\SkillsEntry{Typesetting}{LaTeX styling, Overleaf layout compilation environments.}
+
+\sepspace
+
+%%% Academic Projects
+%%% ------------------------------------------------------------
+\NewPart{Academic Projects}
+
+\textbf{Computer Science Lab Personal Portfolio Webpage} \hfill April 2026
+\begin{itemize}
+    \item Constructed and maintained an organized remote file repository structure.
+    \item Programmed a foundational grade-calculating logic script named \texttt{grades.py}.
+    \item Published and deployed an automated, live index page using GitHub Pages.
+\end{itemize}
+
+\end{document}
