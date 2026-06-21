@@ -1,29 +1,151 @@
+/* Modern Reset and Dynamic Gradient Background */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
-    margin: 40px auto;
-    max-width: 800px;
-    padding: 0 20px;
-    color: #333333;
-    background-color: #fdfdfd;
+    margin: 0;
+    padding: 40px 20px;
+    color: #ffffff;
+    /* Beautiful blend from hot electric blue to rich navy blue */
+    background: linear-gradient(135deg, #00d2ff 0%, #004e92 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    color: #2c3e50;
-    border-bottom: 2px solid #ecf0f1;
-    padding-bottom: 10px;
+/* Glassmorphism Frosted Main Container */
+.portfolio-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    max-width: 850px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    color: #16a085;
-    margin-top: 30px;
+/* Header Flex Box Layout */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-a {
-    color: #2980b9;
+.header-text h1 {
+    font-size: 2.5rem;
+    margin: 0 0 5px 0;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.gh-code {
+    font-size: 1.1rem;
+    color: #e0f7fa;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.location-date {
+    font-size: 0.95rem;
+    color: #b0decb;
+    margin: 0;
+}
+
+/* Aligned Passport Photo Layout */
+.header-photo img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 25px 0;
+}
+
+.intro-section p {
+    font-size: 1.05rem;
+    color: #f5f5f5;
+    margin: 0 0 30px 0;
+}
+
+/* Structured Layout Sections Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card-section {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-section h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #00d2ff; /* Hot blue highlight for secondary titles */
+    border-bottom: 1px solid rgba(0, 210, 255, 0.2);
+    padding-bottom: 8px;
+}
+
+/* Styled Interactive Link Rows */
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin-bottom: 12px;
+}
+
+.link-list li:last-child {
+    margin-bottom: 0;
+}
+
+.link-list a {
+    color: #ffffff;
     text-decoration: none;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.link-list a .icon {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.link-list a:hover {
+    color: #00d2ff;
+    transform: translateX(4px);
+}
+
+/* Responsive UI adjustments for smaller screens */
+@media (max-width: 650px) {
+    .profile-header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    body {
+        padding: 20px 10px;
+    }
 }
