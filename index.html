@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arjaf Anwar - Computer Science Portfolio</title>
-    <link rel="stylesheet" href="https://arjaf-anwar.github.io/CS--Portfolio-/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,55 +13,42 @@
         <header class="profile-header">
             <div class="header-text">
                 <h1>Arjaf Anwar</h1>
-                <p class="gh-code">Student ID / GH Code: GH-1059387</p>
-                <p class="location-date">📍 Berlin, Germany &nbsp;|&nbsp; 📅 June 2026</p>
+                <p class="subtitle">Software Engineering Student at GISMA University of Applied Sciences</p>
+                <p class="gh-code">GH Code: GH1059387</p>
             </div>
             <div class="header-photo">
-                <img src="cv/Arjaf anwar passport size pic.jpg" alt="Arjaf Anwar Profile Photo">
+                <img src="Arjaf anwar passport size pic.jpg" alt="Arjaf Anwar Profile Photo">
             </div>
         </header>
 
-        <hr class="section-divider">
-
-        <section class="intro-section">
-            <p>Welcome to my computer science lab portfolio website. This platform highlights my core coursework submissions, terminal utilities, and programming assignments completed for the B201 Computer Science Lab module at Gisma University of Applied Sciences.</p>
+        <section class="content-block">
+            <h2>About Me</h2>
+            <p>Welcome to my computer science lab portfolio website. This site contains my coursework submissions, terminal utilities, and programming modules completed for the B201 Computer Science Lab module at Gisma University of Applied Sciences. Location: Berlin, Germany | June 2026.</p>
         </section>
 
-        <main class="portfolio-grid">
+        <section class="content-block">
+            <h2>Resume</h2>
+            <div class="button-group">
+                <a class="btn-primary" href="https://arjaf-anwar.github.io/CS--Portfolio-/cv/cv%20cs.pdf" target="_blank">Download My CV (PDF)</a>
+                <a class="btn-secondary" href="https://arjaf-anwar.github.io/CS--Portfolio-/cv/cv%20cs.tex" target="_blank">View LaTeX Source</a>
+            </div>
+        </section>
+
+        <section class="content-block">
+            <h2>Featured Projects</h2>
             
-            <div class="card-section">
-                <h2>Coursework Documents</h2>
-                <ul class="link-list">
-                    <li>
-                        <a href="https://arjaf-anwar.github.io/CS--Portfolio-/cv/cv%20cs.pdf" target="_blank">
-                            <span class="icon">📄</span> Curriculum Vitae (PDF Version)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://arjaf-anwar.github.io/CS--Portfolio-/cv/cv%20cs.tex" target="_blank">
-                            <span class="icon">⚛️</span> Curriculum Vitae (LaTeX Source Code)
-                        </a>
-                    </li>
-                </ul>
+            <div class="project-item">
+                <h3>Student Mark Sheet Generator</h3>
+                <p>A Python script that implements core programming fundamentals like variables, loops, and conditional if/else logic to process academic marks and calculate averages.</p>
+                <a class="project-link" href="https://arjaf-anwar.github.io/CS--Portfolio-/projects/grades.py" target="_blank">🔗 View grades.py</a>
             </div>
 
-            <div class="card-section">
-                <h2>Lab Projects</h2>
-                <ul class="link-list">
-                    <li>
-                        <a href="https://arjaf-anwar.github.io/CS--Portfolio-/projects/grades.py" target="_blank">
-                            <span class="icon">🐍</span> Grades Calculation Script (grades.py)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://arjaf-anwar.github.io/CS--Portfolio-/projects/atm.py" target="_blank">
-                            <span class="icon">🏧</span> Interactive ATM Simulator (atm.py)
-                        </a>
-                    </li>
-                </ul>
+            <div class="project-item">
+                <h3>Multi-Purpose Unit Converter</h3>
+                <p>An interactive script capable of processing computational input options to accurately convert temperatures (Celsius to Fahrenheit) and travel distances (Kilometers to Miles).</p>
+                <a class="project-link" href="https://arjaf-anwar.github.io/CS--Portfolio-/projects/Degree.py" target="_blank">🔗 View Degree.py</a>
             </div>
-
-        </main>
+        </section>
 
     </div>
 
