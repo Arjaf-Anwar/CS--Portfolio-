@@ -1,4 +1,4 @@
-\documentclass[paper=a4,fontsize=11pt]{scrartcl} 
+\documentclass[paper=a4,fontsize=10.5pt]{scrartcl} 
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -6,9 +6,10 @@
 \usepackage{amsmath,amsfonts,amsthm}     
 \usepackage{graphicx}                     
 \usepackage[svgnames]{xcolor}             
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.6in]{geometry} % Standard comfortable margins
 \usepackage{url}
 \usepackage[colorlinks=true,urlcolor=purple]{hyperref}
+\usepackage{enumitem} 
 
 \frenchspacing              
 \pagestyle{empty}           
@@ -16,55 +17,72 @@
 \usepackage{sectsty}
 \sectionfont{
 	\usefont{OT1}{phv}{b}{n}
-	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+	\sectionrule{0pt}{0pt}{-2pt}{1.5pt}} 
 
 % Macros for Skills structure
 \newlength{\spacebox}
 \settowidth{\spacebox}{8888888888}			
-\newcommand{\sepspace}{\vspace*{0.5em}}		
+\newcommand{\sepspace}{\vspace*{0.2em}}		
 \newcommand{\SkillsEntry}[2]{      
 		\noindent\hangindent=2em\hangafter=0 
-		\parbox{\spacebox}{        
-		\textit{#1}}			   
+		\parbox{\spacebox}{         
+		\textit{#1}}               
 		\hspace{1.5em} #2 \par}    
 
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
 
+% Global setting to compress list spacing
+\setlist[itemize]{topsep=0pt,itemsep=1pt,partopsep=0pt,parsep=0pt,leftmargin=15pt}
+
 % ==========================================
 % B201 Computer Science Lab - CV Assignment
 % Student Name: Arjaf Anwar
-% Date: April 2026
+% Date: June 2026
 % ==========================================
 
 \begin{document}
 
 % Header Layout with your exact student details and photo
-\begin{minipage}[t]{0.7\textwidth}
+\begin{minipage}[t]{0.73\textwidth}
     \Huge \usefont{OT1}{phv}{b}{n} \textbf{Arjaf Anwar} \\
-    \large \usefont{OT1}{phv}{m}{n} \vspace{2mm}
+    \large \usefont{OT1}{phv}{m}{n} \vspace{1mm}
     \\ Berlin, Germany 
     \\ Email: Arjaf.anwar@gisma-student.com 
     \\ GitHub: \href{https://arjaf-anwar.github.io/CS--Portfolio-/}{arjaf-anwar.github.io/CS--Portfolio-}
+    \\ Student ID / GH Code: GH-1059387
 \end{minipage}
-\begin{minipage}[t]{0.3\textwidth}
+\begin{minipage}[t]{0.27\textwidth}
     \raggedleft
-    % Including your uploaded image file
-    \includegraphics[width=2.8cm]{Arjaf anwar passport size pic.jpg} 
+    \includegraphics[width=2.5cm]{Arjaf anwar passport size pic.jpg} 
 \end{minipage}
 
 \sepspace
-\vspace{5mm}
+
+%%% Personal Profile
+%%% ------------------------------------------------------------
+\NewPart{Personal Profile}
+Highly motivated and tech-driven Computer Science undergraduate with a strong foundation in software logic, modern web structures, and structured document design. Recognized for being an analytical thinker and an adaptable, fast learner who excels at parsing complex code syntax, debugging environments, and rapidly adopting new language systems to resolve technical problems.
+
+\sepspace
 
 %%% Education
 %%% ------------------------------------------------------------
 \NewPart{Education}
 
 \textbf{Gisma University of Applied Sciences} \hfill Berlin, Germany \\
-BSc in Computer Science \hfill June 2026
+BSc in Computer Science \hfill June 2026)
 \begin{itemize}
     \item Core Laboratory Modules: B201 Computer Science Lab.
     \item Practiced elementary data handling, text manipulation, and calculation logic.
     \item Studied document production systems and code layout control.
+\end{itemize}
+
+\vspace{1.5mm}
+
+\textbf{Secondary School Education} \hfill Completed
+\begin{itemize}
+    \item Acquired foundational programming principles, HTML markup structures, and Python programming workflows.
+    \item Collaborated in a peer group to design, build, and present a basic interactive game utilizing Python programming syntax for the final graduation project.
 \end{itemize}
 
 \sepspace
@@ -80,11 +98,18 @@ BSc in Computer Science \hfill June 2026
 
 \sepspace
 
+%%% Spoken \& Written Languages
+%%% ------------------------------------------------------------
+\NewPart{Languages}
+\noindent Urdu \quad $\bullet$ \quad Hindi \quad $\bullet$ \quad English \quad $\bullet$ \quad Arabic \quad $\bullet$ \quad German
+
+\sepspace
+
 %%% Academic Projects
 %%% ------------------------------------------------------------
 \NewPart{Academic Projects}
 
-\textbf{Computer Science Lab Personal Portfolio Webpage} \hfill April 2026
+\textbf{Computer Science Lab Personal Portfolio Webpage} 
 \begin{itemize}
     \item Constructed and maintained an organized remote file repository structure.
     \item Programmed a foundational grade-calculating logic script named \texttt{grades.py}.
