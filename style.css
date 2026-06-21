@@ -1,6 +1,6 @@
 /* ==========================================
    CS-Portfolio- Modern CSS Stylesheet
-   Color Scheme: Darkened Left Blue to Navy Blue Gradient
+   Color Scheme: Dark Blue (Left) -> Navy Blue (Center) -> Dark Blue (Right)
    ========================================== */
 
 /* Custom Reset and Font System */
@@ -10,8 +10,8 @@ body {
     margin: 0;
     padding: 80px 20px;
     color: #ffffff;
-    /* Darkened the left side to #007799 for a deep, rich blend across the screen */
-    background: linear-gradient(135deg, #007799 0%, #001f3f 100%);
+    /* Three-stop horizontal gradient: Dark blue edges with rich navy blue in the middle */
+    background: linear-gradient(to right, #001a33 0%, #0d1a2a 50%, #001a33 100%);
     background-attachment: fixed;
     min-height: 100vh;
     display: flex;
@@ -50,11 +50,11 @@ body {
     font-weight: 300;
 }
 
-/* High-contrast visibility upgrade for your GH Code */
+/* Clear high-contrast visibility for your GH Code */
 .gh-code {
     font-size: 1.15rem;
     color: #00e5ff; 
-    text-shadow: 0px 0px 8px rgba(0, 229, 255, 0.6); /* Added a subtle neon glow so it never gets lost */
+    text-shadow: 0px 0px 8px rgba(0, 229, 255, 0.6); /* Neon glow effect */
     font-weight: bold;
     margin: 0;
     letter-spacing: 0.5px;
@@ -77,11 +77,11 @@ body {
 
 /* Rounded Content Section Cards with deep dark background for contrast */
 .content-block {
-    background: #0d1a2a; 
+    background: #09111a; /* Adjusted slightly to contrast perfectly with the centered navy backdrop */
     border-radius: 16px;
     padding: 35px;
     margin-bottom: 30px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -184,7 +184,7 @@ body {
     opacity: 0.8;
 }
 
-/* Responsive adjustments for handheld mobile monitors */
+/* Responsive adjustments for mobile layouts */
 @media (max-width: 650px) {
     .profile-header {
         flex-direction: column-reverse;
@@ -192,16 +192,4 @@ body {
         gap: 15px;
     }
     .header-text h1 {
-        font-size: 2.5rem;
-    }
-    .header-photo img {
-        width: 110px;
-        height: 110px;
-    }
-    body {
-        padding: 40px 10px;
-    }
-    .content-block {
-        padding: 25px;
-    }
-}
+        font-size: 2.5
